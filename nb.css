@@ -20,7 +20,6 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-
 @media screen and (max-width: 376px) {
   h1#call {
     font-size: 28px;
@@ -58,16 +57,25 @@ time, mark, audio, video {
   div#form { margin-top: 0; }
 }
 
+@media screen and (min-width: 991px) and (max-width: 1060px) {
+  h1#call {
+    margin-top: 40px;
+  }
+  div#banner-text {
+    margin-top: 100;
+    padding-top: 0;
+  }
+}
+
 @media screen and (min-width: 752px) and (max-width: 1350px) {
   div#ebook {
-    margin-top: 140px;
+    margin-top: 80px;
   }
 }
 
 html {
-  text-align: center;
   width: 100%;
-  background-color: #414855
+  background-color: #414855;
   font-weight: normal;
   margin: auto;
 }
@@ -79,7 +87,6 @@ body {
   background-color: white;
   margin: auto;
   max-width: 1440px;
-  /*width: 100%;*/
 }
 
 .container {
@@ -88,7 +95,7 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 40px;
 }
@@ -107,7 +114,8 @@ h1 {
 #form label {
   color: #414855;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 400;
+  padding-bottom: 8px;
 }
 
 h2 {
@@ -151,8 +159,9 @@ span .bold {
 
 #tagline {
   max-width: 90%;
-  font-size: 22px;
+  font-size: 23px;
   margin-top: 8px;
+  font-weight: 400;
 }
 
 #chevron {
@@ -178,20 +187,16 @@ span .bold {
 }
 
 #ebook h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #303030;
   font-size: 26px;
-  font-weight: 900;
+  font-weight: 500;
+  margin-top: 16px;
+  letter-spacing: 1px;
 }
 
 #ebook p strong {
-  font-weight: 900;
-}
-
-h2#details {
-  margin-top: 16px;
-  letter-spacing: 3px;
-  font-size: 26px;
+  font-weight: 700;
 }
 
 #share {
@@ -201,6 +206,10 @@ h2#details {
   margin-top: 0;
 }
 
+div#share span {
+  font-weight: 300;
+}
+
 #share-icons {
   padding-left: 8px;
   padding-top: 0;
@@ -208,7 +217,12 @@ h2#details {
 }
 
 #download{
-  padding-top: 44px;
+  padding-top: 38px;
+}
+
+h2#download {
+  font-weight: 500;
+  font-size: 28px;
 }
 
 .fab {
@@ -227,7 +241,7 @@ ul {
 }
 
 #form {
-  height: 660px;
+  height: 690px;
   width: 90%;
   background-color: #dedede;
   margin: auto;
@@ -293,7 +307,6 @@ footer {
 }
 
 #footer {
-  /*padding-top: 20px;*/
   height: 100px;
   display: flex;
   align-items: center;
@@ -302,6 +315,7 @@ footer {
 
 footer p {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 24px;
+  letter-spacing: 0.5px;
 }
