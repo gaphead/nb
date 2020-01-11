@@ -20,26 +20,36 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-@media screen and (max-width: 376px) {
-  h1#call {
-    font-size: 28px;
-    margin: auto;
-    max-width: 100%;
+
+@media screen and (max-width: 1123px); {
+  div#banner-text {
+    padding-top: 45px;
   }
 }
 
+
+
+
+@media screen and (max-width: 376px) {
+/*  h1#call {
+    font-size: 28px;
+    margin: auto;
+    max-width: 100%;
+  }*/
+}
+
 @media screen and (min-width: 377px) and (max-width: 751px) {
-  h1#call {
+/*  h1#call {
     font-size: 32px;
     margin: auto;
     max-width: 100%;
   }
   div#ebook {
-    margin-top: 180px; }
+    margin-top: 180px; }*/
 }
 
 @media screen and (max-width: 751px) {
-  h4#tagline {
+/*  h4#tagline {
     font-size: 22px;
     margin: auto;
     max-width: 100%;
@@ -52,25 +62,28 @@ time, mark, audio, video {
     margin-top: 0;
     padding-top: 0;
     text-align: center;
-  }
-  div#share { display: none; }
-  div#form { margin-top: 0; }
+  }*/
+/*  div#share { display: none; }
+  div#form { margin-top: 0; }*/
 }
 
-@media screen and (min-width: 991px) and (max-width: 1060px) {
-  h1#call {
+@media screen and (min-width: 900px) and (max-width: 1060px) {
+/*  h1#call {
     margin-top: 40px;
   }
   div#banner-text {
-    margin-top: 100;
+    margin-top: 100px;
     padding-top: 0;
   }
+  div#ebook {
+    margin-top: 120px;
+  }*/
 }
 
 @media screen and (min-width: 752px) and (max-width: 1350px) {
-  div#ebook {
+/*  div#ebook {
     margin-top: 80px;
-  }
+  }*/
 }
 
 html {
@@ -101,7 +114,7 @@ h1 {
 }
 
 #banner-text {
-  padding-top: 78px;
+  padding-top: 130px;
 }
 
 #form h2 {
@@ -175,7 +188,7 @@ span .bold {
 }
 
 #ebook {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 #ebook p, li {
