@@ -227,8 +227,9 @@ div#form {
   width: 97%;
   background-color: #dedede;
   margin: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-top: 110px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 button.btn-form {
@@ -274,7 +275,6 @@ div#footer {
   height: 100px;
   display: flex;
   align-items: center;
-  /*justify-content: space-around;*/
   flex-direction: row;
 }
 
@@ -305,6 +305,16 @@ p#copyright {
   }
 }
 
+@media screen and (max-width: 1320px) {
+  p#address {
+    padding-left: 32px;
+    text-align: left;
+  }
+  p#copyright {
+    padding-right: 32px;
+    text-align: right;
+  }
+}
 
 @media screen and (max-width: 1094px) {
   div#banner-text {
@@ -317,7 +327,18 @@ p#copyright {
     margin-bottom: 24px;
   }
   div#ebook {
-    margin-top: 120px;
+    margin-top: 160px;
+  }
+  p#address {
+    padding-left: 0;
+    text-align: center;
+  }
+  p#copyright {
+    padding-right: 0;
+    text-align: center;
+  }
+  div#ebook {
+    padding-left: 32px;
   }
 }
 
@@ -327,13 +348,23 @@ p#copyright {
   }
 }
 
-
 @media screen and (max-width: 652px) {
-  h4#tagline {
-    margin-bottom: 12px;
-  }
   h1#call {
     font-size: 36px;
   }
+  h4#tagline {
+    margin-bottom: 12px;
+  }
 }
 
+@media screen and (max-width: 596px) {
+  h1#call {
+    font-size: 30px;
+  }
+  h4#tagline {
+    font-size: 18px;
+  }
+  div#share {
+    display: none;
+  }
+}
