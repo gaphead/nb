@@ -367,4 +367,10 @@ p#copyright {
   div#share {
     display: none;
   }
+  div#col2 {
+    padding-left: 15px;
+  }
+  button.btn-form {
+    font-size: 18px;
+  }
 }
