@@ -144,10 +144,7 @@ footer {
 ul li {
   padding-top: 4px;
   max-width: 90%;
-}
-
-ul {
-  margin-left: 0;
+  margin-left: 8px;
 }
 
 hr {
@@ -156,7 +153,29 @@ hr {
 }
 
 
+/* layout */
+
+div.container {
+  max-width: 1175px;
+}
+
+div#col2 {
+  padding-left: 40px;
+}
+
+
 /* headings */
+
+h1#call {
+  max-width: 95%;
+}
+
+h4#tagline {
+  max-width: 90%;
+  font-size: 23px;
+  margin-top: 28px;
+  font-weight: 400;
+}
 
 div#ebook h2 {
   font-family: 'Montserrat', sans-serif;
@@ -197,16 +216,28 @@ img#avatar {
   height: 120px;
 }
 
+div#share-icons {
+  padding-left: 8px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
 i.fab {
   color: #3fb18f;
   font-size: 23px;
   padding: 5px;
 }
 
-div#share-icons {
-  padding-left: 8px;
-  padding-top: 0;
-  margin-top: 0;
+div#chevron {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+i.fa-chevron-down {
+  font-size: 64px;
+  margin-top: 28px;
+
 }
 
 
@@ -219,40 +250,33 @@ div#share-icons {
   justify-content: space-between;
 }
 
+div#share {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
 #navbar span {
   font-size: 14px;
   font-weight: 300;
 }
 
 
-/* call to action */
+/* above fold */
 
-#call {
-  max-width: 95%;
+div#banner-text {
+  padding-top: 130px;
 }
 
-h4#tagline {
-  max-width: 90%;
-  font-size: 23px;
-  margin-top: 28px;
-  font-weight: 400;
-}
 
-#chevron {
-  display: flex;
-  justify-content: center;
-}
+/* below fold */
 
-.fa-chevron-down {
-  font-size: 64px;
-  margin-top: 28px;
-}
-
-#ebook {
+div#ebook {
   margin-top: 70px;
 }
 
-#ebook p, li {
+div#ebook p, li {
   max-width: 435px;
   color: #303030;
   font-size: 16px;
@@ -260,30 +284,7 @@ h4#tagline {
   letter-spacing: 0.5px;
 }
 
-div#col2 {
-  padding-left: 40px;
-}
-
-
-#ebook p strong {
-  font-weight: 700;
-}
-
-#share {
-  display: flex;
-  align-items: center;
-  padding-top: 0;
-  margin-top: 0;
-}
-
-
-
-
-
-
-
-
-#form {
+div#form {
   height: 685px;
   width: 97%;
   background-color: #dedede;
@@ -292,31 +293,20 @@ div#col2 {
   padding-right: 40px;
 }
 
-.container {
-  max-width: 1175px;
-}
-
-#banner-text {
-  padding-top: 130px;
-}
-
-
-.btn-form {
+button.btn-form {
   background-color: #3fb18f;
   width: 100%;
   height: 60px;
   font-size: 24px;
 }
 
-
-
-.testimonial {
+div.testimonial {
   max-width: 350px;
   margin: auto;
   color: #414855;
 }
 
-.testimonial blockquote {
+div.testimonial blockquote {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-size: 18px;
@@ -325,28 +315,41 @@ div#col2 {
   letter-spacing: 0.5px;
 }
 
-.testimonial span {
+div.testimonial span {
   color: #3fb18f;
   font-family: 'Lato', sans-serif;
   font-size: 24px;
 }
 
-#signature {
+p#signature {
   font-size: 18px;
 }
 
 
+/* footer */
 
-#footer {
+div#footer {
   height: 100px;
   display: flex;
   align-items: center;
+  /*justify-content: space-around;*/
+  flex-direction: row;
 }
-
 
 footer p {
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
+
+p#address {
+  padding-left: 135px;
+}
+
+p#copyright {
+  padding-right: 160px;
+  text-align: right;
+}
+
+
