@@ -1,3 +1,5 @@
+/* RESET */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,6 +22,8 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+
+/*m media queries */
 
 @media screen and (max-width: 1123px); {
   div#banner-text {
@@ -86,24 +90,21 @@ time, mark, audio, video {
   }*/
 }
 
+
+/* global */
+
 html {
+  margin: auto;
   width: 100%;
   background-color: #414855;
-  font-weight: normal;
-  margin: auto;
 }
 
 body {
+  margin: auto;
   font-family: 'Lato', sans-serif;
-  font-weight: normal;
   color: white;
   background-color: white;
-  margin: auto;
   max-width: 1440px;
-}
-
-.container {
-  max-width: 1175px;
 }
 
 h1 {
@@ -111,24 +112,6 @@ h1 {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 40px;
-}
-
-#banner-text {
-  padding-top: 130px;
-}
-
-#form h2 {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 26px;
-}
-
-#form label {
-  color: #414855;
-  font-size: 14px;
-  font-weight: 400;
-  padding-bottom: 8px;
 }
 
 h2 {
@@ -143,12 +126,91 @@ h4 {
   font-size: 20px;
 }
 
-#hero {
+strong {
+  font-weight: bold;
+}
+
+input, select {
+  border-width: 0;
+  box-shadow: 0 0 16px 1px #bdbdbd;
+}
+
+footer {
+  background-color: #414855;
+  height: 100px;
+  margin-bottom: 0;
+}
+
+ul li {
+  padding-top: 4px;
+  max-width: 90%;
+}
+
+ul {
+  margin-left: 0;
+}
+
+hr {
+  border-color: black;
+  border-width: 1px;
+}
+
+
+/* headings */
+
+div#ebook h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #303030;
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 16px;
+  letter-spacing: 1px;
+}
+
+h2#download {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 500;
+  font-size: 28px;
+  padding-top: 38px;
+}
+
+div#form label {
+  color: #414855;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+
+/* images */
+
+div#hero {
   background: url("bg.png") no-repeat top center;
   background-size: auto 600px;
   background-repeat: no-repeat;
   max-width: 1440px;
 }
+
+img#avatar {
+  border-radius: 50%;
+  height: 120px;
+}
+
+i.fab {
+  color: #3fb18f;
+  font-size: 23px;
+  padding: 5px;
+}
+
+div#share-icons {
+  padding-left: 8px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+
+/* navbar */
 
 #navbar {
   display: flex;
@@ -159,21 +221,20 @@ h4 {
 
 #navbar span {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
-span .bold {
-  font-weight: bold;
-}
+
+/* call to action */
 
 #call {
   max-width: 95%;
 }
 
-#tagline {
+h4#tagline {
   max-width: 90%;
   font-size: 23px;
-  margin-top: 8px;
+  margin-top: 28px;
   font-weight: 400;
 }
 
@@ -199,14 +260,10 @@ span .bold {
   letter-spacing: 0.5px;
 }
 
-#ebook h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: #303030;
-  font-size: 26px;
-  font-weight: 500;
-  margin-top: 16px;
-  letter-spacing: 1px;
+div#col2 {
+  padding-left: 40px;
 }
+
 
 #ebook p strong {
   font-weight: 700;
@@ -219,53 +276,30 @@ span .bold {
   margin-top: 0;
 }
 
-div#share span {
-  font-weight: 300;
-}
 
-#share-icons {
-  padding-left: 8px;
-  padding-top: 0;
-  margin-top: 0;
-}
 
-#download{
-  padding-top: 38px;
-}
 
-h2#download {
-  font-weight: 500;
-  font-size: 28px;
-}
 
-.fab {
-  color: #3fb18f;
-  font-size: 23px;
-  padding: 5px;
-}
 
-ul li {
-  padding-top: 4px;
-  max-width: 90%;
-}
 
-ul {
-  margin-left: 0;
-}
 
 #form {
-  height: 690px;
-  width: 90%;
+  height: 685px;
+  width: 97%;
   background-color: #dedede;
   margin: auto;
   padding-left: 40px;
   padding-right: 40px;
 }
 
-hr {
-  border-color: black;
-  border-width: 1px;
+.container {
+  max-width: 1175px;
 }
+
+#banner-text {
+  padding-top: 130px;
+}
+
 
 .btn-form {
   background-color: #3fb18f;
@@ -274,10 +308,7 @@ hr {
   font-size: 24px;
 }
 
-#avatar {
-  border-radius: 50%;
-  height: 120px;
-}
+
 
 .testimonial {
   max-width: 350px;
@@ -304,20 +335,7 @@ hr {
   font-size: 18px;
 }
 
-input, select {
-  border-width: 0;
-  box-shadow: 0 0 16px 1px #bdbdbd;
-}
 
-strong {
-  font-weight: bold;
-}
-
-footer {
-  background-color: #414855;
-  height: 100px;
-  margin-bottom: 0;
-}
 
 #footer {
   height: 100px;
