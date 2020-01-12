@@ -340,9 +340,6 @@ p#copyright {
   div#ebook {
     padding-left: 32px;
   }
-}
-
-@media screen and (max-width: 991px) {
   div#banner-text {
     margin-top: 60px;
   }
